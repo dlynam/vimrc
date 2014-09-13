@@ -1,5 +1,7 @@
 colorscheme jellybeans
 
+:set guifont=Menlo\ Regular:h14
+
 "disable mouse"
 :set mouse=c
 
@@ -51,3 +53,9 @@ set noerrorbells " I hate console beeps.
 
 "make gitgutter column background match
 highlight clear SignColumn
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
